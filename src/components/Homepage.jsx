@@ -12,7 +12,6 @@ function Homepage() {
   const [selectedMeal, setSelectedMeal] = useState(null);
   const [openDetails, setOpenDetails] = useState(false);
 
-  // Fetch categories from API
   useEffect(() => {
     fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
       .then((response) => response.json())
@@ -26,7 +25,6 @@ function Homepage() {
       });
   }, []);
 
-  // Fetch meals for selected category
   useEffect(() => {
     if (selectedCategory) {
       setLoading(true);
@@ -47,7 +45,6 @@ function Homepage() {
     }
   }, [selectedCategory]);
 
-  // Fetch details of selected meal
   useEffect(() => {
     const fetchMealDetails = async () => {
       if (selectedMeal) {
