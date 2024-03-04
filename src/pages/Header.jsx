@@ -9,6 +9,7 @@ import {Link}  from "react-router-dom";
 function Header() {
   const { Toggletheme, theme } = useTheme();
   return (
+    <>
     <div className="navbar">
       <img
         src="/icon/logo-black.svg"
@@ -41,6 +42,7 @@ function Header() {
         </li>
       </ul>
     </div>
+    </>
   );
 }
 

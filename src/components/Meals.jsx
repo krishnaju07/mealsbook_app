@@ -25,7 +25,7 @@ function MealDetails({ meal }) {
       <div className="meal-info">
         <Typography variant="h5" sx={{textAlign:'left'}}>{meal.strMeal}</Typography>
         <Typography variant="body1" gutterBottom> {meal.strInstructions}</Typography>
-        <Typography variant="body1" gutterBottom sx={{textAlign:'left'}}>Price: ${quantity * 1 /* Placeholder price */}</Typography>
+        <Typography variant="body1" gutterBottom sx={{textAlign:'left'}}>Price:  ₹{quantity * 150 }</Typography>
         <div className="quantity-controls">
           <IconButton onClick={handleDecrement}>
             <RemoveIcon />

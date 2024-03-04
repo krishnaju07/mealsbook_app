@@ -10,21 +10,17 @@ function CartPage() {
   ];
 
   const handleRemoveFromCart = (id) => {
-    // Implement logic to remove item from cart
   };
 
   const handleAddToCart = (id) => {
-    // Implement logic to add item to cart
   };
 
   const calculateTotal = () => {
-    // Implement logic to calculate total price
   };
 
   return (
     <div className="cart-page">
       <Grid container spacing={3}>
-        {/* Left column */}
         <Grid item lg={12}>
           <Typography variant="h6" gutterBottom sx={{ textAlign: 'left' }}>
             Cart Items
@@ -45,7 +41,6 @@ function CartPage() {
             </Paper>
           ))}
         </Grid>
-        {/* Right column */}
         <Grid item xs={12} lg={4}>
           <Paper elevation={3} className="cart-summary">
             <Typography variant="h6" gutterBottom>
